@@ -44,12 +44,12 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
-    title: "Toast Project",
+    title: "Personal Portfolio",
     image: project1,
     description:
-      " Designed a scalable toast notification system leveraging React Context API, enabling dynamic variants, real-time updates, and smooth dismiss interactions.",
-    technologies: ["HTML", "Bootstrap", "React"],
-    link : "https://react-toast-dusky.vercel.app/"
+      " Developed a modern and fully responsive personal portfolio using React.js to showcase my skills, projects, and experience. Implemented clean UI components, smooth animations, and optimized routing for seamless navigation. Designed with a focus on performance, accessibility, and mobile-friendly layout to create a professional online presence.",
+    technologies: ["HTML", "Bootstrap", "React.js"],
+    link : "https://portfolio-irfan-badan.vercel.app/"
   },
   {
     title: "CRM panel",

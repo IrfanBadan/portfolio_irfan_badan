@@ -2,9 +2,13 @@ import logo from "../assets/projects/logo.png";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { SiVercel,SiNetlify } from "react-icons/si";
+import { MdLightMode, MdDarkMode } from "react-icons/md";
+import { useTheme } from "../context/ThemeContext";
 
 
 const Navbar = () => {
+  const { theme, toggleTheme } = useTheme();
+
   return (
     <nav className="mb-20 flex items-center justify-between py-6">
       <div className="flex flex-shrink-0 items-center">
@@ -51,6 +55,18 @@ const Navbar = () => {
         >
             <SiNetlify />
         </a>
+
+        <button
+          onClick={toggleTheme}
+          className="p-2 rounded-lg bg-neutral-200 dark:bg-neutral-800 hover:bg-neutral-300 dark:hover:bg-neutral-700 transition-colors duration-300"
+          aria-label="Toggle theme"
+        >
+          {theme === "dark" ? (
+            <MdLightMode className="text-yellow-500" />
+          ) : (
+            <MdDarkMode className="text-neutral-700" />
+          )}
+        </button>
       </div>
     </nav>
   );

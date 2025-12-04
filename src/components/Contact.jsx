@@ -74,7 +74,7 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="border-b border-neutral-900 pb-20 lg:pb-32 "
+      className="border-b border-neutral-300 dark:border-neutral-900 pb-20 lg:pb-32 transition-colors duration-300"
     >
       <div className="text-center mb-16">
         <motion.h2
@@ -82,7 +82,7 @@ const Contact = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ amount: 0.3 }}
-          className="text-5xl font-thin tracking-tight text-white"
+          className="text-5xl font-thin tracking-tight text-neutral-800 dark:text-white transition-colors duration-300"
         >
           Contact Me
         </motion.h2>
@@ -92,7 +92,7 @@ const Contact = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ amount: 0.3 }}
-          className="text-neutral-400 mt-3"
+          className="text-neutral-600 dark:text-neutral-400 mt-3 transition-colors duration-300"
         >
           Get In Touch .
         </motion.p>
@@ -107,10 +107,10 @@ const Contact = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ amount: 0.3 }}
-            className="p-8 rounded-2xl border border-neutral-800 bg-[#11121e]"
+            className="p-8 rounded-2xl border border-neutral-300 dark:border-neutral-800 bg-neutral-100 dark:bg-[#11121e] transition-colors duration-300"
           >
-            <h3 className="text-xl font-semibold mb-2">Email</h3>
-            <p className="text-neutral-400">irfanbadan23@gmail.com</p>
+            <h3 className="text-xl font-semibold mb-2 text-neutral-800 dark:text-white transition-colors duration-300">Email</h3>
+            <p className="text-neutral-600 dark:text-neutral-400 transition-colors duration-300">irfanbadan23@gmail.com</p>
             <a
               href="mailto:irfanbadancs@gmail.com"
               className="mt-3 inline-block text-transparent bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text"
@@ -125,10 +125,10 @@ const Contact = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ amount: 0.3 }}
-            className="p-8 rounded-2xl border border-neutral-800 bg-[#11121e]"
+            className="p-8 rounded-2xl border border-neutral-300 dark:border-neutral-800 bg-neutral-100 dark:bg-[#11121e] transition-colors duration-300"
           >
-            <h3 className="text-xl font-semibold mb-2">WhatsApp</h3>
-            <p className="text-neutral-400">+91 9344605885</p>
+            <h3 className="text-xl font-semibold mb-2 text-neutral-800 dark:text-white transition-colors duration-300">WhatsApp</h3>
+            <p className="text-neutral-600 dark:text-neutral-400 transition-colors duration-300">+91 9344605885</p>
             <a
               href="https://wa.me/917550314020"
               target="_blank"
@@ -146,7 +146,7 @@ const Contact = () => {
           whileInView="visible"
           viewport={{ amount: 0.3 }}
           onSubmit={handleSubmit}
-          className="w-full lg:w-1/2 p-10 rounded-2xl border border-neutral-800 bg-[#11121e] flex flex-col gap-6"
+          className="w-full lg:w-1/2 p-10 rounded-2xl border border-neutral-300 dark:border-neutral-800 bg-neutral-100 dark:bg-[#11121e] flex flex-col gap-6 transition-colors duration-300"
         >
           {status.message && (
             <div
@@ -161,39 +161,39 @@ const Contact = () => {
           )}
 
           <div className="flex flex-col">
-            <label className="text-neutral-300">Name</label>
+            <label className="text-neutral-700 dark:text-neutral-300 transition-colors duration-300">Name</label>
             <input
               type="text"
               name="name"
               value={formData.name}
               onChange={handleChange}
-              className="mt-2 bg-transparent border border-neutral-800 p-3 rounded-lg text-white focus:border-purple-400 outline-none"
+              className="mt-2 bg-white dark:bg-transparent border border-neutral-300 dark:border-neutral-800 p-3 rounded-lg text-neutral-800 dark:text-white focus:border-purple-400 outline-none transition-colors duration-300"
               placeholder="Enter your name"
               required
             />
           </div>
 
           <div className="flex flex-col">
-            <label className="text-neutral-300">Email</label>
+            <label className="text-neutral-700 dark:text-neutral-300 transition-colors duration-300">Email</label>
             <input
               type="email"
               name="email"
               value={formData.email}
               onChange={handleChange}
-              className="mt-2 bg-transparent border border-neutral-800 p-3 rounded-lg text-white focus:border-purple-400 outline-none"
+              className="mt-2 bg-white dark:bg-transparent border border-neutral-300 dark:border-neutral-800 p-3 rounded-lg text-neutral-800 dark:text-white focus:border-purple-400 outline-none transition-colors duration-300"
               placeholder="Enter your email"
               required
             />
           </div>
 
           <div className="flex flex-col">
-            <label className="text-neutral-300">Message</label>
+            <label className="text-neutral-700 dark:text-neutral-300 transition-colors duration-300">Message</label>
             <textarea
               name="message"
               value={formData.message}
               onChange={handleChange}
               rows="6"
-              className="mt-2 bg-transparent border border-neutral-800 p-3 rounded-lg text-white focus:border-purple-400 outline-none resize-none"
+              className="mt-2 bg-white dark:bg-transparent border border-neutral-300 dark:border-neutral-800 p-3 rounded-lg text-neutral-800 dark:text-white focus:border-purple-400 outline-none resize-none transition-colors duration-300"
               placeholder="Write your message"
               required
             ></textarea>
