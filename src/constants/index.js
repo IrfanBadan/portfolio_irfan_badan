@@ -42,8 +42,8 @@ export const PROJECTS = [
     image: project1,
     description:
       "Developed a modern and fully responsive e-commerce website using React.js, featuring product listings, detailed product pages, and a smooth user experience. Implemented reusable UI components, efficient state management, and optimized routing for seamless navigation. Focused on performance, accessibility, and mobile responsiveness to deliver a user-friendly online shopping experience.",
-    technologies: ["React.js", "Bootstrap"],
-    link: "#",
+    technologies: ["React.js", "Express.js","MongoDB"] ,
+    link: "https://mens-clothing-e-commerce.vercel.app/",
   },
   {
     title: "CRM panel",
@@ -51,7 +51,7 @@ export const PROJECTS = [
     description:
       "Developed a fully responsive and scalable CRM panel using React and Supabase, featuring real-time data management, role-based authentication, and intuitive UI components that streamline customer and employee operations for improved business efficiency.",
     technologies: ["React", "supabase", "tailwindcss"],
-    link: "#",
+    link: "https://looque-crm-full-stack-project.vercel.app/",
   },
   {
     title: "JWT project",
@@ -59,7 +59,7 @@ export const PROJECTS = [
     description:
       "A secure role-based authentication system built with Express, MongoDB, and JWT, featuring access/refresh token management, admin control, and rate-limiting protection.",
     technologies: ["HTML", "CSS", "React", "MongoDB", "Express.js"],
-    link: "#",
+    link: "https://jwt-auth-app-nine.vercel.app/",
   },
 ];
 
