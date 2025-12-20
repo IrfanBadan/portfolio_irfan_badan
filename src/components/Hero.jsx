@@ -23,7 +23,7 @@ const Hero = () => {
               animate="visible"
               className="pb-16 text-6xl font-thin tracking-tight lg:mt-16 lg:text-8xl"
             >
-             Irfan Badan
+              Irfan Badan
             </motion.h2>
             <motion.span
               variants={container(0.5)}
@@ -46,8 +46,7 @@ const Hero = () => {
         <div className="w-full lg:w-1/2 lg:p-8 ">
           <div className="flex justify-center items-start">
             <motion.img
-              className="w-full max-w-md h-auto object-cover object-[0_15%] rounded-lg
- aspect-square"
+              className="w-full max-w-md h-auto object-cover object-[0_15%] rounded-lg aspect-square"
               initial={{ x: 100, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 1, delay: 1.2 }}

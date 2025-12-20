@@ -34,7 +34,7 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    
+
     // Validation
     if (!formData.name || !formData.email || !formData.message) {
       setStatus({ type: "error", message: "Please fill in all fields" });
@@ -112,7 +112,7 @@ const Contact = () => {
             <h3 className="text-xl font-semibold mb-2 text-neutral-800 dark:text-white transition-colors duration-300">Email</h3>
             <p className="text-neutral-600 dark:text-neutral-400 transition-colors duration-300">irfanbadan23@gmail.com</p>
             <a
-              href="mailto:irfanbadancs@gmail.com"
+              href="mailto:irfanbadan23@gmail.com"
               className="mt-3 inline-block text-transparent bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text"
             >
               Write Me →
@@ -130,7 +130,7 @@ const Contact = () => {
             <h3 className="text-xl font-semibold mb-2 text-neutral-800 dark:text-white transition-colors duration-300">WhatsApp</h3>
             <p className="text-neutral-600 dark:text-neutral-400 transition-colors duration-300">+91 9344605885</p>
             <a
-              href="https://wa.me/917550314020"
+              href="https://wa.me/919344605885"
               target="_blank"
               className="mt-3 inline-block text-transparent bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text"
             >
@@ -150,11 +150,10 @@ const Contact = () => {
         >
           {status.message && (
             <div
-              className={`p-3 rounded-lg ${
-                status.type === "success"
+              className={`p-3 rounded-lg ${status.type === "success"
                   ? "bg-green-900/30 text-green-400 border border-green-800"
                   : "bg-red-900/30 text-red-400 border border-red-800"
-              }`}
+                }`}
             >
               {status.message}
             </div>
@@ -202,9 +201,8 @@ const Contact = () => {
           <button
             type="submit"
             disabled={isLoading}
-            className={`mt-4 bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 text-black font-semibold py-3 rounded-lg transition-opacity ${
-              isLoading ? "opacity-50 cursor-not-allowed" : "hover:opacity-90"
-            }`}
+            className={`mt-4 bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 text-black font-semibold py-3 rounded-lg transition-opacity ${isLoading ? "opacity-50 cursor-not-allowed" : "hover:opacity-90"
+              }`}
           >
             {isLoading ? "Sending..." : "Send Message"}
           </button>

@@ -1,15 +1,9 @@
 import project1 from "../assets/projects/project-1.png";
 import project2 from "../assets/projects/project-2.png";
 import project3 from "../assets/projects/project-3.png";
-import project4 from "../assets/projects/project-4.jpg";
-
 export const HERO_CONTENT = `I am a dedicated MERN Stack developer with a strong passion for building dynamic, responsive, and user-centric web applications. With hands-on experience in MongoDB, Express.js, React.js, and Node.js, I specialize in crafting seamless full-stack solutions that are both efficient and scalable. I enjoy transforming ideas into functional products, optimizing performance, and delivering clean, maintainable code. My goal is to continuously grow as a developer and build impactful applications that provide real value to users and businesses.`;
 
-export const ABOUT_TEXT = `I’m a passionate and versatile Full Stack Developer with a strong interest in building responsive and user-friendly web applications. I’ve gained hands-on experience working with technologies like React,s Express, and MongoDB, and I’m constantly expanding my skills through real-world projects and continuous learning.
-
-My journey in web development started with a curiosity to understand how modern websites and applications work, which has now grown into a focused career path. I enjoy turning ideas into functional and visually appealing solutions, and I thrive in collaborative environments where I can learn and contribute.
-
-Outside of coding, I enjoy exploring new technologies, learning modern frameworks, and building side projects that challenge my creativity and problem-solving skills.`;
+export const ABOUT_TEXT = `I’m a passionate and versatile Full Stack Developer with a strong interest in building responsive and user-friendly web applications. I’ve gained hands-on experience working with technologies like React,s Express, and MongoDB, and I’m constantly expanding my skills through real-world projects and continuous learning. My journey in web development started with a curiosity to understand how modern websites and applications work, which has now grown into a focused career path. I enjoy turning ideas into functional and visually appealing solutions, and I thrive in collaborative environments where I can learn and contribute. Outside of coding, I enjoy exploring new technologies, learning modern frameworks, and building side projects that challenge my creativity and problem-solving skills.`;
 
 export const EXPERIENCES = [
   {
@@ -44,30 +38,29 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
-    title: "Personal Portfolio",
+    title: "Mens Wear E-Commerce",
     image: project1,
     description:
-      " Developed a modern and fully responsive personal portfolio using React.js to showcase my skills, projects, and experience. Implemented clean UI components, smooth animations, and optimized routing for seamless navigation. Designed with a focus on performance, accessibility, and mobile-friendly layout to create a professional online presence.",
-    technologies: ["HTML", "Bootstrap", "React.js"],
-    link : "https://portfolio-irfan-badan.vercel.app/"
+      "Developed a modern and fully responsive e-commerce website using React.js, featuring product listings, detailed product pages, and a smooth user experience. Implemented reusable UI components, efficient state management, and optimized routing for seamless navigation. Focused on performance, accessibility, and mobile responsiveness to deliver a user-friendly online shopping experience.",
+    technologies: ["React.js", "Bootstrap"],
+    link: "#",
   },
   {
     title: "CRM panel",
     image: project2,
     description:
       "Developed a fully responsive and scalable CRM panel using React and Supabase, featuring real-time data management, role-based authentication, and intuitive UI components that streamline customer and employee operations for improved business efficiency.",
-    technologies: ["React","supabase","tailwindcss"],
-    link:"https://looque-crm-full-stack-project.vercel.app/"
+    technologies: ["React", "supabase", "tailwindcss"],
+    link: "#",
   },
   {
     title: "JWT project",
     image: project3,
     description:
       "A secure role-based authentication system built with Express, MongoDB, and JWT, featuring access/refresh token management, admin control, and rate-limiting protection.",
-    technologies: ["HTML", "CSS", "React", "MongoDB","Express.js"],
-    link : "https://jwt-auth-app-nine.vercel.app/"
+    technologies: ["HTML", "CSS", "React", "MongoDB", "Express.js"],
+    link: "#",
   },
-  
 ];
 
 export const CONTACT = {
