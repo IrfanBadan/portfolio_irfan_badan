@@ -1,7 +1,7 @@
 import logo from "../assets/projects/logo.png";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
-import { SiVercel,SiNetlify } from "react-icons/si";
+import { SiVercel, SiNetlify } from "react-icons/si";
 import { MdLightMode, MdDarkMode } from "react-icons/md";
 import { useTheme } from "../context/ThemeContext";
 
@@ -44,7 +44,7 @@ const Navbar = () => {
           rel="noopener noreferrer"
           className="hover:text-pink-500 transition-colors"
         >
-        <SiVercel />
+          <SiVercel />
         </a>
 
         <a
@@ -53,20 +53,9 @@ const Navbar = () => {
           rel="noopener noreferrer"
           className="hover:text-sky-400 transition-colors"
         >
-            <SiNetlify />
+          <SiNetlify />
         </a>
 
-        <button
-          onClick={toggleTheme}
-          className="p-2 rounded-lg bg-neutral-200 dark:bg-neutral-800 hover:bg-neutral-300 dark:hover:bg-neutral-700 transition-colors duration-300"
-          aria-label="Toggle theme"
-        >
-          {theme === "dark" ? (
-            <MdLightMode className="text-yellow-500" />
-          ) : (
-            <MdDarkMode className="text-neutral-700" />
-          )}
-        </button>
       </div>
     </nav>
   );

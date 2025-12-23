@@ -74,7 +74,7 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="border-b border-neutral-300 dark:border-neutral-900 pb-20 lg:pb-32 transition-colors duration-300"
+      className="border-b border-neutral-300 dark:border-neutral-900 pt-24 pb-20 lg:pb-32 transition-colors duration-300"
     >
       <div className="text-center mb-16">
         <motion.h2
@@ -151,8 +151,8 @@ const Contact = () => {
           {status.message && (
             <div
               className={`p-3 rounded-lg ${status.type === "success"
-                  ? "bg-green-900/30 text-green-400 border border-green-800"
-                  : "bg-red-900/30 text-red-400 border border-red-800"
+                ? "bg-green-900/30 text-green-400 border border-green-800"
+                : "bg-red-900/30 text-red-400 border border-red-800"
                 }`}
             >
               {status.message}

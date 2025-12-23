@@ -15,7 +15,7 @@ const Hero = () => {
   return (
     <div className="border-b border-neutral-300 dark:border-neutral-900 pb-4 lg:mb-36 transition-colors duration-300">
       <div className="flex flex-wrap">
-        <div className="w-full lg:w-1/2">
+        <div className="w-full lg:w-1/2 mb-12 lg:mb-0">
           <div className="flex flex-col items-center lg:items-start">
             <motion.h2
               variants={container(0)}
@@ -41,9 +41,23 @@ const Hero = () => {
             >
               {HERO_CONTENT}
             </motion.p>
+            <motion.div
+              variants={container(1.2)}
+              initial="hidden"
+              animate="visible"
+              className="mt-4"
+            >
+              <a
+                href="/resume.pdf"
+                download="Irfan_Badan_Resume.pdf"
+                className="inline-block rounded bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 px-8 py-3 text-sm font-medium text-white transition-all hover:scale-105 hover:shadow-[0_0_20px_rgba(168,85,247,0.4)]"
+              >
+                Download Resume
+              </a>
+            </motion.div>
           </div>
         </div>
-        <div className="w-full lg:w-1/2 lg:p-8 ">
+        <div className="w-full lg:w-1/2 lg:p-8 mt-10 lg:mt-0">
           <div className="flex justify-center items-start">
             <motion.img
               className="w-full max-w-md h-auto object-cover object-[0_15%] rounded-lg aspect-square"
