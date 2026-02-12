@@ -2,6 +2,7 @@ import { RiReactjsLine } from "react-icons/ri";
 import { TbBrandNextjs } from "react-icons/tb";
 import { SiMongodb, SiExpress, SiHtml5, SiCss3, SiJavascript } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa";
+import { SiNextdotjs, SiTypescript } from "react-icons/si";
 import { motion } from "framer-motion";
 
 const iconVariants = (duration) => ({
@@ -36,24 +37,24 @@ const Technologies = () => {
         className="flex flex-wrap items-center justify-center gap-4"
       >
         {/* HTML5 */}
-        <motion.div
+        {/* <motion.div
           variants={iconVariants(3)}
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-neutral-300 dark:border-neutral-800 p-4 bg-white dark:bg-transparent transition-colors duration-300"
         >
           <SiHtml5 className="text-7xl text-orange-500" />
-        </motion.div>
+        </motion.div> */}
 
         {/* CSS3 */}
-        <motion.div
+        {/* <motion.div
           variants={iconVariants(3.5)}
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-neutral-300 dark:border-neutral-800 p-4 bg-white dark:bg-transparent transition-colors duration-300"
         >
           <SiCss3 className="text-7xl text-blue-500" />
-        </motion.div>
+        </motion.div> */}
 
         {/* JavaScript */}
         <motion.div
@@ -65,24 +66,14 @@ const Technologies = () => {
           <SiJavascript className="text-7xl text-yellow-400" />
         </motion.div>
 
-        {/* MongoDB */}
+        {/* TypeScript */}
         <motion.div
-          variants={iconVariants(5)}
+          variants={iconVariants(3.8)}
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-neutral-300 dark:border-neutral-800 p-4 bg-white dark:bg-transparent transition-colors duration-300"
         >
-          <SiMongodb className="text-7xl text-green-500" />
-        </motion.div>
-
-        {/* Express.js */}
-        <motion.div
-          variants={iconVariants(4)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-300 dark:border-neutral-800 p-4 bg-neutral-100 dark:bg-black transition-colors duration-300"
-        >
-          <SiExpress className="text-7xl text-gray-300" />
+          <SiTypescript className="text-7xl text-blue-500" />
         </motion.div>
 
         {/* React */}
@@ -95,6 +86,16 @@ const Technologies = () => {
           <RiReactjsLine className="text-7xl text-cyan-400" />
         </motion.div>
 
+         {/* Next.js */}
+        <motion.div
+          variants={iconVariants(6)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-300 dark:border-neutral-800 p-4 bg-white dark:bg-transparent transition-colors duration-300"
+        >
+          <SiNextdotjs className="text-7xl text-black dark:text-white" />
+        </motion.div>
+
         {/* Node.js */}
         <motion.div
           variants={iconVariants(6)}
@@ -104,6 +105,27 @@ const Technologies = () => {
         >
           <FaNodeJs className="text-7xl text-green-500" />
         </motion.div>
+
+        {/* Express.js */}
+        <motion.div
+          variants={iconVariants(4)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-300 dark:border-neutral-800 p-4 bg-neutral-100 dark:bg-transparent transition-colors duration-300"
+        >
+          <SiExpress className="text-7xl text-gray-300" />
+        </motion.div>
+
+        {/* MongoDB */}
+        <motion.div
+          variants={iconVariants(5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-300 dark:border-neutral-800 p-4 bg-white dark:bg-transparent transition-colors duration-300"
+        >
+          <SiMongodb className="text-7xl text-green-500" />
+        </motion.div>
+
       </motion.div>
     </div>
   );
